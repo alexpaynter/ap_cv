@@ -4,11 +4,13 @@ author: Alex Paynter
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
+    css: ['cv_styles_2.css', 'resume']
     self_contained: true
 knit: pagedown::chrome_print
 ---
 
 ```{r, include = F}
+# knit: pagedown::chrome_print
 library("fontawesome")
 ```
 
@@ -32,10 +34,8 @@ Contact {#contact}
 Skills {#skills}
 --------------------------------------------------------------------------------
 
-- (Bio)statistical analyses.  Primarily applied to medical data, particularly cystic fibrosis, in recent years.
-
+- (Bio)statistical analyses.  Recent applications in medical data, particularly cystic fibrosis.
 - Experienced in R.  Some exposure to D3 (javascript), MATLAB, python, Java, C++ and LaTeX.
-
 - Interested in data visualization and transparent, reproducible publishing.
 
 
@@ -57,7 +57,7 @@ Seattle Children's Research Institute
 
 Seattle, WA
 
-2019-current
+2019- current
 
 My [group](https://www.cff.org/researchers/biostatistics-and-clinical-data-management) focused on large multicenter studies in cystic fibrosis.  In particular, my work focused on long-term post-approval studies in CFTR modulators, and assessing efficacy of home spirometry devices.
 
@@ -67,7 +67,7 @@ University of Washington Cancer Vaccine Institute
 
 Seattle, WA
 
-2018-2019
+2018- 2019
 
 Investigated the association between protein sequences in the human microbiome and immunology responses in pre-clinical lab data.
 
@@ -78,7 +78,7 @@ University of Washington Statistical Consulting
 
 Seattle, WA
 
-2018-2018
+2018- 2018
 
 Statistical consultations with clients from a range of departments (e.g. engineering, meta-analysis, forestry, neuroscience).
 
@@ -108,7 +108,7 @@ Seattle, WA
 2016
 
 
-More information {data-icon=graduation-cap data-concise=true}
+More information {data-icon=paper-plane data-concise=true}
 --------------------------------------------------------------------------------
 
 ### 
