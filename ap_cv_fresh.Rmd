@@ -5,9 +5,7 @@ date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
     self_contained: true
-params:
-  pdf_mode:
-    value: true
+knit: pagedown::chrome_print
 ---
 
 ```{r, include = F}
@@ -49,31 +47,6 @@ Main
 Alex Paynter {#title}
 --------------------------------------------------------------------------------
 
-### Biostatistician II, Seattle Children's Research Institute
-
-
-
-
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
-
-### University of Washington
-
-M.S. in Biostatistics
-
-Seattle, WA 
-
-2019
-
-Thesis:  Tuning parameter selection for a penalized maximum likelihood estimator of species richness.
-
-### University of Washington
-
-B.S. in Mathematics (minor: applied math)
-
-Seattle, WA
-
-2016
 
 Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
@@ -110,7 +83,34 @@ Seattle, WA
 Statistical consultations with clients from a range of departments (e.g. engineering, meta-analysis, forestry, neuroscience).
 
 
-More information {data-icon=laptop}
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-The sidebar links are the best way to obtains more information about me.  Specifically, scientific publications are available with the [ORCID-ID](https://orcid.org/0000-0001-8381-8550), and some code is available on [GitHub](http://github.com/alexpaynter).  For professional references or any other questions, please contact me at alexcpaynter@gmail.com.
+### University of Washington
+
+M.S. in Biostatistics
+
+Seattle, WA 
+
+2019
+
+Thesis:  Tuning parameter selection for a penalized maximum likelihood estimator of species richness.
+
+### University of Washington
+
+B.S. in Mathematics (minor: applied math)
+
+Seattle, WA
+
+2016
+
+
+More information {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### 
+
+The sidebar links are the best way to obtains more information about me.  Specifically, scientific publications are available with the [ORCID-ID](https://orcid.org/0000-0001-8381-8550), and some code is available on [GitHub](http://github.com/alexpaynter).  For references or any other questions, please contact me at alexcpaynter@gmail.com.
