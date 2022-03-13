@@ -1,49 +1,120 @@
 ---
-title: "Alex Paynter's CV"
+title: "Alex Paynter's Resume"
 author: Alex Paynter
 date: "`r Sys.Date()`"
-params:
-  pdf_mode:
-    value: true
 output:
   pagedown::html_resume:
     css: ['cv_styles.css', 'resume']
     self_contained: true
+knit: pagedown::chrome_print
 ---
 
-
-```{r, include=FALSE}
-knitr::opts_chunk$set(
-  results='asis', 
-  echo = FALSE
-)
-library(magrittr) 
-source("print_help.R")
-
-# Read in all data and initialize a CV printer object
-CV <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/1QZCS5H0HE0LwcgEQkf6ZF4irRdSAjKLLnRql8EdSfew/edit?usp=sharing",  
-  pdf_mode = params$pdf_mode
-)
-
+```{r, include = F}
+# knit: pagedown::chrome_print
+library("fontawesome")
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Aside
+================================================================================
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-```
+![Alex photo](profile_1.jpeg){width=100%}
 
-## Including Plots
 
-You can also embed plots, for example:
+Contact {#contact}
+--------------------------------------------------------------------------------
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+- <i class="fa fa-envelope"></i> alexcpaynter@gmail.com
+<!-- Add personal website when it's ready -->
+- <i class="fa fa-github"></i> [GitHub](http://github.com/alexpaynter)
+- `r fa("orcid", fill = "#A6CE39")` [ORCID-ID](https://orcid.org/0000-0001-8381-8550)
+<!-- - <i class="fa fa-phone"></i> please email. -->
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+(Bio)statistical analyses.  Recent applications in medical data, particularly cystic fibrosis.
+
+Experienced in R.  Some exposure to D3 (javascript), MATLAB, python, Java, C++ and LaTeX.
+
+Interested in data visualization and transparent, reproducible publishing.
+
+
+
+
+Main
+================================================================================
+
+Alex Paynter {#title}
+--------------------------------------------------------------------------------
+
+
+Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+### Biostatistician II
+
+Seattle Children's Research Institute
+
+Seattle, WA
+
+2019- current
+
+Research [group](https://www.cff.org/researchers/biostatistics-and-clinical-data-management) focused on large multicenter studies in cystic fibrosis.  My work focused on long-term post-approval studies of CFTR modulators, and assessing the efficacy of home spirometry devices.
+
+### Research assistant
+
+University of Washington Cancer Vaccine Institute
+
+Seattle, WA
+
+2018- 2019
+
+Investigated associations between protein sequences in the human microbiome and leukocyte responses using lab data.
+
+
+### Statistical consultant 
+
+University of Washington Statistical Consulting
+
+Seattle, WA
+
+2018- 2018
+
+Statistical consultations with clients from a range departments (e.g. engineering, meta-analysis, forestry, neuroscience).
+
+
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### University of Washington
+
+M.S. in Biostatistics
+
+Seattle, WA 
+
+2019
+
+Thesis:  Tuning parameter selection for a penalized maximum likelihood estimator of species richness.
+
+### University of Washington
+
+B.S. in Mathematics 
+
+Seattle, WA
+
+2016
+
+Minor in applied math, coursework in computer science and computational neuroscience.
+
+
+More information {data-icon=paper-plane data-concise=true}
+--------------------------------------------------------------------------------
+
+### 
+
+The sidebar links are the best way to obtain more information about me.  Scientific publications are available with the [ORCID-ID](https://orcid.org/0000-0001-8381-8550), and some code is available on [GitHub](http://github.com/alexpaynter).  For references or any other questions, please contact me at alexcpaynter@gmail.com.
